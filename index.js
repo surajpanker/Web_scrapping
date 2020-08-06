@@ -54,9 +54,6 @@ const axios = require("axios");
 
 const siteUrl = "https://time.com/";
 
-let siteName = "";
-
-const Arr =new Array();
 
 const fetchData = async () => {
   const result = await axios.get(siteUrl);
@@ -67,7 +64,7 @@ const getResults = async () => {
   const $ = await fetchData();
    
 
-  const Result =[];
+  const Result =[]; //resulting array
 
  // const $ = cheerio.load(html);
       
